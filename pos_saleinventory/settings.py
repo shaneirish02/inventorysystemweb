@@ -120,7 +120,7 @@ WSGI_APPLICATION = 'pos_saleinventory.wsgi.application'
 DATABASES = {
     'default': {
        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sumariaPOS',      
+        'NAME': 'SSTPOS',      
         'USER': 'root',          
         'PASSWORD': '',     
         'HOST': 'localhost',

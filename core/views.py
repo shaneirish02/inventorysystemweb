@@ -611,6 +611,9 @@ def supplier_list_api(request):
     suppliers_list = list(suppliers)
     return JsonResponse(suppliers_list, safe=False)
 
+def supplier_list(request):
+    suppliers = Supplier.objects.all()
+    return render(request, 'supplier_list.html', {'suppliers': suppliers})
 
 def supplier_create(request):
     if request.method == 'POST':
